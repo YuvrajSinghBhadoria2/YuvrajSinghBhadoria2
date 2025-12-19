@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Yuvraj Singh Bhadoria</h1>
-<h3 align="center">🚀 GenAI Engineer @ Bank of America | LLM Engineer | Data Scientist</h3>
+<h3 align="center">🚀 AI/ML Engineer @ Bank of America | LLM Engineer | Data Scientist</h3>
 <p align="center">
   📧 Email me: <a href="mailto:yuvrajsinghbhado2030@gmail.com">yuvrajsinghbhado2030@gmail.com</a>
 </p>
@@ -24,7 +24,7 @@
 
 ### 🌟 <strong>About Me</strong>
 
-- 🤖 **GenAI Engineer @ Bank of America**, building scalable, production-grade AI platforms.  
+- 🤖 **AI/ML Engineer @ Bank of America**, building scalable, production-grade AI platforms.  
 - 🧠 **LLM Engineer** working with **RAG, Hybrid Retrieval, Re-Ranking, Embeddings & Agentic Systems**.  
 - 🔍 Skilled in **LangChain, LangGraph, Multi-Agent Workflows, Tool-Use & Orchestration Pipelines**.  
 - 🛠️ **Data Scientist stack:**  
