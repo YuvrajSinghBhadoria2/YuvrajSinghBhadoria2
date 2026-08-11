@@ -2,7 +2,11 @@
 
 <br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:030712,30:111827,55:1E3A8A,75:3730A3,100:0F172A&text=YUVRAJ&fontSize=64&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=SINGH%20BHADORIA%20%E2%80%94%20MACHINE%20LEARNING%20ENGINEER&descSize=14&descAlignY=60&descColor=A5B4FC&descAlign=50" />
+<div align="center">
+
+<img src="./assets/hero.svg" width="100%" alt="Yuvraj Singh Bhadoria — Machine Learning Engineer">
+
+</div>
 
 <br>
 
