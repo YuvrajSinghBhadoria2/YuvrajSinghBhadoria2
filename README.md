@@ -1,139 +1,56 @@
-<div align="center">
+<h2> Hi, I'm Yuvraj Singh Bhadoria! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 
-<br>
+<img align='right' src="https://media.giphy.com/media/ieyl9zmCjO4b4t6qoY/giphy.gif" width="230">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0D1117,50:111827,100:1D4ED8&text=YUVRAJ%20SINGH%20BHADORIA&fontSize=38&fontColor=FFFFFF&fontAlignY=40&animation=fadeIn&desc=Machine%20Learning%20Engineer%20%7C%20Model%20Engineering%20%7C%20Production%20AI&descSize=16&descAlignY=62&descColor=9CA3AF" />
+<p><em>Machine Learning Engineer at <a href="https://www.bankofamerica.com/">Bank of America</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Ex-Policybazaar · Ex-Infosys<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+</em></p>
 
-<br>
+[![Linkedin: yuvraj-singh-bhadoria](https://img.shields.io/badge/-yuvraj--singh--bhadoria-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yuvraj-singh-bhadoria/)](https://www.linkedin.com/in/yuvraj-singh-bhadoria/)
+[![GitHub YuvrajSinghBhadoria2](https://img.shields.io/github/followers/YuvrajSinghBhadoria2?label=follow&style=social)](https://github.com/YuvrajSinghBhadoria2)
+[![Email](https://img.shields.io/badge/-yuvrajsinghbhado2030@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:yuvrajsinghbhado2030@gmail.com)
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2600&pause=1000&color=60A5FA&center=true&vCenter=true&width=760&lines=training+models;post-training+models;optimizing+inference;building+production+ML+systems" />
+---
 
-<br><br>
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
-<a href="https://github.com/YuvrajSinghBhadoria2">
-<img src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=white" />
-</a>
-&nbsp;
-<a href="https://linkedin.com/in/yuvraj-singh-bhadoria">
-<img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=0A66C2" />
-</a>
-&nbsp;
-<a href="mailto:yuvrajsinghbhado2030@gmail.com">
-<img src="https://img.shields.io/badge/Contact-0D1117?style=flat-square&logo=gmail&logoColor=EA4335" />
-</a>
+```javascript
+const yuvraj = {
+  pronouns: "he" | "him",
+  currentRole: "ML Engineer @ Bank of America",
+  focus: ["LLM Training", "Post-Training", "Inference Optimization", "Production AI"],
+  code: ["Python", "PyTorch", "JAX", "CUDA", "SQL"],
+  tools: ["vLLM", "FastAPI", "LangChain", "LangGraph", "Docker", "Kubernetes"],
+  infrastructure: ["PostgreSQL", "Redis", "PySpark", "Azure", "MLflow"],
+  interests: {
+    currentlyLearning: "JAX for high-performance ML",
+    exploring: "Reasoning models & efficient inference",
+    building: "Production LLM infrastructure"
+  },
+  experience: {
+    bankOfAmerica: "Building production LLM serving infrastructure",
+    policybazaar: "RAG systems & document intelligence",
+    infosys: "ML solutions at scale"
+  },
+  metrics: {
+    retrievalAccuracy: "52% → 88%",
+    inferenceLatency: "800ms → <300ms",
+    costOptimization: "-25%",
+    errorReduction: "-18%"
+  }
+}
+```
 
-</div>
+---
 
-<br>
+### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love building systems that actually work in production</b> so if you want to say <b>hi, I'll be happy to connect!</b> :)</em>
 
 ---
 
 <div align="center">
 
-```
-╔═══════════════════════════════════════════════════════════════╗
-║                                                               ║
-║   "I build models. I build the systems around them."          ║
-║                                                               ║
-╚═══════════════════════════════════════════════════════════════╝
-```
+### `selected work`
 
 </div>
-
-<br>
-
-<div align="center">
-
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1500&color=60A5FA&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=120&lines=Machine+Learning+Engineer+@+Bank+of+America;Deep+Learning+%C2%B7+NLP+%C2%B7+LLMs+%C2%B7+Model+Engineering;From+Experiment+%E2%86%92+Benchmark+%E2%86%92+Production)
-
-</div>
-
-<br>
-
-<div align="center">
-
-![Focus](https://img.shields.io/badge/-Training-60A5FA?style=for-the-badge)
-![Focus](https://img.shields.io/badge/-Post--Training-818CF8?style=for-the-badge)
-![Focus](https://img.shields.io/badge/-Evaluation-A78BFA?style=for-the-badge)
-![Focus](https://img.shields.io/badge/-Inference-C084FC?style=for-the-badge)
-![Focus](https://img.shields.io/badge/-GPU%20Efficiency-F472B6?style=for-the-badge)
-![Focus](https://img.shields.io/badge/-Production%20Systems-F9A8D4?style=for-the-badge)
-
-</div>
-
-<br>
-
-<div align="center">
-
-```
-   ┌─────────────────────────────────────────────────────────────────┐
-   │                                                                 │
-   │    I work on the parts of ML that get hard AFTER the demo:      │
-   │                                                                 │
-   │         🧪  experiment  →  📊  benchmark  →  ⚡  optimize       │
-   │                                                                 │
-   │                           🚀  production                        │
-   │                                                                 │
-   └─────────────────────────────────────────────────────────────────┘
-```
-
-</div>
-
-<br>
-
-<div align="center">
-
-### `what I've shipped`
-
-</div>
-
-<br>
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-
-![Accuracy](https://img.shields.io/badge/-52%25%20%E2%86%92%2088%25-10B981?style=for-the-badge)
-
-**retrieval accuracy**
-
-</td>
-
-<td align="center" width="25%">
-
-![Latency](https://img.shields.io/badge/-800ms%20%E2%86%92%20%3C300ms-3B82F6?style=for-the-badge)
-
-**inference latency**
-
-</td>
-
-<td align="center" width="25%">
-
-![Cost](https://img.shields.io/badge/-25%25%20cost-F59E0B?style=for-the-badge)
-
-**inference cost**
-
-</td>
-
-<td align="center" width="25%">
-
-![Pricing](https://img.shields.io/badge/-18%25%20error-EF4444?style=for-the-badge)
-
-**pricing error**
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br>
-
----
-
-## `selected work`
 
 <table>
 <tr>
@@ -146,7 +63,7 @@
 
 `FastAPI` `vLLM` `PostgreSQL` `Redis` `Kubernetes`
 
-Authentication · multi-tenancy · routing · quotas · observability · circuit breakers · testing
+Authentication · multi-tenancy · routing · quotas · observability · circuit breakers
 
 **→ [explore repository](https://github.com/YuvrajSinghBhadoria2/production-llm-platform)**
 
