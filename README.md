@@ -13,31 +13,55 @@
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
-```javascript
-const yuvraj = {
-  pronouns: "he" | "him",
-  currentRole: "ML Engineer @ Bank of America",
-  focus: ["LLM Training", "Post-Training", "Inference Optimization", "Production AI"],
-  code: ["Python", "PyTorch", "JAX", "CUDA", "SQL"],
-  tools: ["vLLM", "FastAPI", "LangChain", "LangGraph", "Docker", "Kubernetes"],
-  infrastructure: ["PostgreSQL", "Redis", "PySpark", "Azure", "MLflow"],
-  interests: {
-    currentlyLearning: "JAX for high-performance ML",
-    exploring: "Reasoning models & efficient inference",
-    building: "Production LLM infrastructure"
-  },
-  experience: {
-    bankOfAmerica: "Building production LLM serving infrastructure",
-    policybazaar: "RAG systems & document intelligence",
-    infosys: "ML solutions at scale"
-  },
-  metrics: {
-    retrievalAccuracy: "52% → 88%",
-    inferenceLatency: "800ms → <300ms",
-    costOptimization: "-25%",
-    errorReduction: "-18%"
-  }
-}
+```python
+class MLEngineer:
+    """
+    Machine Learning Engineer @ Bank of America
+    Building production LLM infrastructure
+    """
+    
+    def __init__(self):
+        self.name = "Yuvraj Singh Bhadoria"
+        self.pronouns = ["he", "him"]
+        self.role = "ML Engineer @ Bank of America"
+        
+    # Core competencies
+    focus = [
+        "LLM Training",        # SFT, DPO, RLHF
+        "Post-Training",       # PEFT, LoRA, QLoRA
+        "Inference",           # vLLM, TensorRT, KV-cache
+        "Production AI"        # Latency, cost, reliability
+    ]
+    
+    # Tech stack
+    frameworks = ["PyTorch", "JAX", "Transformers", "CUDA"]
+    tools = ["vLLM", "FastAPI", "LangChain", "LangGraph"]
+    infra = ["Docker", "Kubernetes", "PostgreSQL", "Redis"]
+    data = ["PySpark", "SQL", "Azure", "MLflow"]
+    
+    # Experience timeline
+    @property
+    def experience(self):
+        return {
+            "Bank of America": "Production LLM serving infrastructure",
+            "Policybazaar": "RAG systems & document intelligence", 
+            "Infosys": "ML solutions at scale"
+        }
+    
+    # Shipped metrics
+    @property
+    def metrics(self):
+        return {
+            "retrieval_accuracy": "52% → 88%",   # +36%
+            "inference_latency": "800ms → <300ms", # -62%
+            "inference_cost": "-25%",              # saved
+            "pricing_error": "-18%"               # reduced
+        }
+    
+    # Current interests
+    currently_learning = "JAX for high-performance ML"
+    exploring = "Reasoning models & efficient inference"
+    building = "Production LLM infrastructure"
 ```
 
 ---
