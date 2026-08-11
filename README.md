@@ -1,9 +1,9 @@
 <div align="center">
 
-<!-- Stunning Header -->
+<!-- Header -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,20:161B22,40:58A6FF,60:161B22,80:0D1117&height=200&section=header&text=Yuvraj%20Singh%20Bhadoria&fontSize=50&fontColor=FFFFFF&fontAlignY=35&desc=ML%20Engineer%20%40%20Bank%20of%20America&descSize=20&descAlignY=55&animation=fadeIn" />
 
-<!-- Dynamic Typing Animation -->
+<!-- Typing Animation -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=1200&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Building+Production+AI+Systems;LLM+Training+%C2%B7+Post-Training+%C2%B7+Inference;52%25+%E2%86%92+88%25+Retrieval+Accuracy" alt="Typing SVG" />
 
 <br/>
@@ -12,7 +12,6 @@
 <a href="https://linkedin.com/in/yuvraj-singh-bhadoria"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:yuvrajsinghbhado2030@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://portfolio-yuvraj-singh-bhadoria.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
-<a href="https://github.com/YuvrajSinghBhadoria2?tab=repositories"><img src="https://img.shields.io/badge/47-Repositories-58A6FF?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 </div>
 
@@ -36,7 +35,7 @@
 
 Not prototypes. Not demos. **Systems serving real users, at scale, under latency constraints, with guardrails that catch what can go wrong.**
 
-I think like a systems engineer — latency budgets, failure modes, and cost efficiency matter to me as much as model accuracy. That's why I added safety guardrails in production, tuned KV-cache before asking for bigger hardware, and rewrote ETL jobs before scaling the cluster.
+I think like a systems engineer — latency budgets, failure modes, and cost efficiency matter to me as much as model accuracy.
 
 <div align="center">
 
@@ -105,27 +104,11 @@ I think like a systems engineer — latency budgets, failure modes, and cost eff
 
 <div align="center">
 
-[![YouTube Notes Generator](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=Youtube-notes-generator&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)](https://github.com/YuvrajSinghBhadoria2/Youtube-notes-generator)
-[![PDF Chatbot](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=PDF-Chatbot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)](https://github.com/YuvrajSinghBhadoria2/PDF-Chatbot)
-[![Wikipedia QA Bot](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=Wikipedia_Powered_Q-AChatbot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)](https://github.com/YuvrajSinghBhadoria2/Wikipedia_Powered_Q-AChatbot)
+[![YouTube Notes Generator](https://img.shields.io/badge/YouTube-Notes%20Generator-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/YuvrajSinghBhadoria2/Youtube-notes-generator)
 
-</div>
+[![PDF Chatbot](https://img.shields.io/badge/PDF-Chatbot-999999?style=for-the-badge&logo=pdf&logoColor=white)](https://github.com/YuvrajSinghBhadoria2/PDF-Chatbot)
 
----
-
-<br/>
-
-## 📈 GitHub Stats
-
-<div align="center">
-
-<a href="https://github.com/YuvrajSinghBhadoria2">
-<img src="https://github-readme-stats.vercel.app/api?username=YuvrajSinghBhadoria2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="49%" />
-</a>
-
-<a href="https://github.com/YuvrajSinghBhadoria2">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuvrajSinghBhadoria2&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="49%" />
-</a>
+[![Wikipedia QA Bot](https://img.shields.io/badge/Wikipedia-QA%20Bot-000000?style=for-the-badge&logo=wikipedia&logoColor=white)](https://github.com/YuvrajSinghBhadoria2/Wikipedia_Powered_Q-AChatbot)
 
 </div>
 
