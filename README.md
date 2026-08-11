@@ -1,6 +1,6 @@
 <h2> Hi, I'm Yuvraj Singh Bhadoria! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 
-<img align='right' src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="230">
+<img align='right' src="https://media.giphy.com/media/l3vR16pONs5pOqyAM/giphy.gif" width="230">
 
 <p><em>Machine Learning Engineer at <a href="https://www.bankofamerica.com/">Bank of America</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Ex-Policybazaar · Ex-Infosys<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
