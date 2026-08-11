@@ -2,39 +2,19 @@
 
 <br>
 
-<div align="center">
+# YUVRAJ SINGH BHADORIA
 
-<a href="https://github.com/YuvrajSinghBhadoria2">
-<img width="100%" src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=52&duration=4000&pause=1500&color=FFFFFF&center=true&vCenter=true&width=900&height=100&lines=YUVRAJ+SINGH+BHADORIA" alt="Yuvraj Singh Bhadoria" />
-</a>
+### Machine Learning Engineer · Model Engineering · Production AI
 
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2800&pause=1000&color=60A5FA&center=true&vCenter=true&width=800&height=45&lines=MACHINE+LEARNING+ENGINEER;MODEL+ENGINEERING+%2F%2F+DEEP+LEARNING+%2F%2F+AI+SYSTEMS;PYTORCH+%2F%2F+JAX+%2F%2F+CUDA+%2F%2F+NLP+%2F%2F+LLMs" />
+`PYTORCH` · `JAX` · `CUDA` · `NLP` · `LLMs`
 
 <br>
 
-`MODEL ENGINEERING` &nbsp; `DEEP LEARNING` &nbsp; `NLP` &nbsp; `LLMs`
-
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=900&color=60A5FA&center=true&vCenter=true&width=760&height=40&lines=TRAIN+%E2%86%92+POST-TRAIN+%E2%86%92+EVALUATE+%E2%86%92+OPTIMIZE+%E2%86%92+SHIP;building+models+that+work+beyond+the+notebook.;model+quality+%C3%97+systems+efficiency" />
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2600&pause=1000&color=60A5FA&center=true&vCenter=true&width=760&lines=training+models;post-training+models;optimizing+inference;building+production+ML+systems" />
-
-<br><br>
-
-<a href="https://github.com/YuvrajSinghBhadoria2">
-<img src="https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=white" />
-</a>
-&nbsp;
-<a href="https://linkedin.com/in/yuvraj-singh-bhadoria">
-<img src="https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=0A66C2" />
-</a>
-&nbsp;
-<a href="mailto:yuvrajsinghbhado2030@gmail.com">
-<img src="https://img.shields.io/badge/Contact-0D1117?style=flat-square&logo=gmail&logoColor=EA4335" />
-</a>
+[GitHub](https://github.com/YuvrajSinghBhadoria2) · [LinkedIn](YOUR_LINKEDIN_URL)
 
 </div>
 
@@ -44,82 +24,43 @@
 
 <div align="center">
 
-### `I build models. I build the systems around them.`
+### I build models. I build the systems around them.
 
 </div>
-
-<br>
 
 I'm a **Machine Learning Engineer at Bank of America**, focused on **deep learning, NLP, LLMs and model engineering**.
 
-My current work and research interests sit around the parts of ML that become difficult after the first successful experiment:
+I'm particularly interested in what happens after the first successful experiment — **training, post-training, evaluation, inference, GPU efficiency and production ML systems**.
 
-**training · post-training · evaluation · inference · GPU efficiency · production systems**
-
-I like taking an idea from **experiment → benchmark → optimization → production**.
+I like taking ideas from **experiment → benchmark → optimization → production**.
 
 ---
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="25%">
-
-**52% → 88%**
-
-retrieval accuracy
-
-</td>
-
-<td align="center" width="25%">
-
-**800ms → <300ms**
-
-inference latency
-
-</td>
-
-<td align="center" width="25%">
-
-**−25%**
-
-inference cost
-
-</td>
-
-<td align="center" width="25%">
-
-**−18%**
-
-pricing error
-
-</td>
-</tr>
-</table>
+|    **52% → 88%**   | **800ms → <300ms** |    **−25%**    |    **−18%**   |
+| :----------------: | :----------------: | :------------: | :-----------: |
+| Retrieval accuracy |  Inference latency | Inference cost | Pricing error |
 
 </div>
 
-<br>
-
 ---
 
-## `selected work`
+## selected work
 
 <table>
 <tr>
-
 <td width="50%" valign="top">
 
 ### production-llm-platform
 
-**Production-oriented LLM serving infrastructure.**
+Production-oriented LLM serving infrastructure.
 
 `FastAPI` `vLLM` `PostgreSQL` `Redis` `Kubernetes`
 
 Authentication · multi-tenancy · routing · quotas · observability · circuit breakers · testing
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/production-llm-platform)**
+→ **[repository](https://github.com/YuvrajSinghBhadoria2/production-llm-platform)**
 
 </td>
 
@@ -127,29 +68,27 @@ Authentication · multi-tenancy · routing · quotas · observability · circuit
 
 ### enterprise-agent-platform
 
-**Infrastructure for production AI workflows.**
+Infrastructure for production AI workflows.
 
 `FastAPI` `PostgreSQL` `Redis` `Docker` `Kubernetes`
 
 Multi-tenant architecture · authentication · migrations · testing · deployment
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/enterprise-agent-platform)**
+→ **[repository](https://github.com/YuvrajSinghBhadoria2/enterprise-agent-platform)**
 
 </td>
-
 </tr>
 
 <tr>
-
 <td width="50%" valign="top">
 
 ### opencode-voice-mcp
 
-**Exploring voice interfaces and MCP-based workflows.**
+Exploring voice interfaces and MCP-based workflows.
 
 `Python` `MCP` `Voice` `AI`
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/opencode-voice-mcp)**
+→ **[repository](https://github.com/YuvrajSinghBhadoria2/opencode-voice-mcp)**
 
 </td>
 
@@ -157,73 +96,73 @@ Multi-tenant architecture · authentication · migrations · testing · deployme
 
 ### Fine-tuned-with_DPO
 
-**LLM fine-tuning using Direct Preference Optimization.**
+LLM post-training using Direct Preference Optimization.
 
 `Python` `DPO` `LLMs` `Post-Training`
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO)**
+→ **[repository](https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO)**
 
 </td>
-
 </tr>
 </table>
 
 ---
 
+## the stack
+
 <div align="center">
 
-## `the stack`
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,jax,linux,docker,kubernetes,git&perline=8" />
+<img src="https://skillicons.dev/icons?i=python,pytorch,jax,cpp,linux,docker,kubernetes,git&perline=8" />
 
 <br><br>
 
-`JAX` · `CUDA` · `Transformers` · `vLLM` · `FastAPI` · `PostgreSQL` · `Redis` · `Spark` · `SQL`
+`CUDA` · `Transformers` · `vLLM` · `FastAPI` · `PostgreSQL` · `Redis` · `Spark` · `SQL`
 
 </div>
 
 ---
 
-## `what I'm going deeper into`
+## going deeper
 
-```text
-                  MODEL ENGINEERING
+**Training**
 
-        ┌──────────────┬──────────────┐
-        │              │              │
-     TRAINING      POST-TRAINING   EVALUATION
-        │              │              │
-     PyTorch           SFT          Benchmarks
-     JAX                PEFT         Error analysis
-     CUDA               RL          Reliability
-        │              │              │
-        └──────────────┼──────────────┘
-                       │
-                       ▼
-                  INFERENCE
-                       │
-                latency / cost
-                throughput / GPU
-                       │
-                       ▼
-                  ML SYSTEMS
-```
+PyTorch · JAX · CUDA · distributed training
 
-<br>
+**Post-training**
 
-I'm particularly interested in **efficient training, post-training, reasoning models, inference optimization and GPU systems**.
+SFT · PEFT · DPO · preference optimization
+
+**Evaluation**
+
+benchmarks · error analysis · reliability · model quality
+
+**Inference**
+
+latency · throughput · memory · GPU utilization · cost
+
+**Systems**
+
+model serving · APIs · containers · Kubernetes · observability
 
 ---
 
+## GitHub
+
 <div align="center">
 
-## `github`
+<img src="https://github-readme-stats.vercel.app/api?username=YuvrajSinghBhadoria2&show_icons=true&hide_border=true&theme=transparent&title_color=60A5FA&text_color=94A3B8&icon_color=818CF8&rank_icon=github" height="165" />
+
+  
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuvrajSinghBhadoria2&layout=compact&hide_border=true&theme=transparent&title_color=60A5FA&text_color=94A3B8&langs_count=6" height="165" />
+
+</div>
 
 <br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YuvrajSinghBhadoria2&bg_color=00000000&color=60A5FA&line=4F46E5&point=FFFFFF&area=true&hide_border=true" width="100%" />
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=YuvrajSinghBhadoria2&bg_color=00000000&color=60A5FA&line=6366F1&point=FFFFFF&area=true&hide_border=true" width="100%" />
 
 </div>
 
@@ -233,11 +172,14 @@ I'm particularly interested in **efficient training, post-training, reasoning mo
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:1D4ED8,50:111827,100:0D1117" />
+**building in public · learning in public · shipping in public**
 
-<sub>
+<br><br>
 
-**open to ambitious remote ML / AI engineering teams**
+Open to ambitious **remote ML / AI engineering teams**.
 
-</sub>
+<br><br>
+
+[GitHub](https://github.com/YuvrajSinghBhadoria2) · [LinkedIn](YOUR_LINKEDIN_URL)
+
 </div>
