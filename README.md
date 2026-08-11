@@ -197,17 +197,4 @@ I'm particularly interested in **efficient training, post-training, reasoning mo
 
 </div>
 
----
 
-<div align="center">
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&color=0:1D4ED8,50:111827,100:0D1117" />
-
-<sub>
-
-**open to ambitious remote ML / AI engineering teams**
-
-</sub>
-</div>
