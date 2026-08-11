@@ -61,13 +61,18 @@ Not prototypes. Not demos. Systems serving real users, at scale, under latency c
 
 <br/>
 
-## 🚀 Featured Projects
+## 🚀 What I Work On
 
 <div align="center">
 
-[![Enterprise RAG](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=Enterprise-RAG-System&theme=tokyonight&hide_border=true)](https://github.com/YuvrajSinghBhadoria2/Enterprise-RAG-System)
-[![LLM Inference](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=LLM-Inference-Pipeline&theme=tokyonight&hide_border=true)](https://github.com/YuvrajSinghBhadoria2/LLM-Inference-Pipeline)
-[![Fine-Tuning](https://github-readme-stats.vercel.app/api/pin/?username=YuvrajSinghBhadoria2&repo=Fine-Tuning-Pipeline&theme=tokyonight&hide_border=true)](https://github.com/YuvrajSinghBhadoria2/Fine-Tuning-Pipeline)
+| Domain | Technologies |
+|--------|--------------|
+| **LLM Training** | PyTorch, JAX, LoRA, QLoRA, DPO, FSDP |
+| **RAG Systems** | FAISS, Pinecone, BM25, ColBERT, Hybrid Retrieval |
+| **Inference** | vLLM, Continuous Batching, KV-Cache Optimization |
+| **Agents** | LangChain, LangGraph, Multi-Agent Orchestration |
+| **Data** | PySpark, Azure, Databricks, MLflow |
+| **Deploy** | Docker, Kubernetes, FastAPI |
 
 </div>
 
@@ -103,17 +108,25 @@ Not prototypes. Not demos. Systems serving real users, at scale, under latency c
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=YuvrajSinghBhadoria2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=00D4FF&text_color=E4E4E7&icon_color=00D4FF" width="49%" />
+<a href="https://github.com/YuvrajSinghBhadoria2">
+<img src="https://github-readme-stats.vercel.app/api?username=YuvrajSinghBhadoria2&show_icons=true&theme=tokyonight&hide_border=true" width="49%" />
+</a>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YuvrajSinghBhadoria2&theme=tokyonight&hide_border=true&background=1A1B27&stroke=00D4FF&ring=00D4FF&fire=00D4FF&currStreakLabel=E4E4E7&sideLabels=E4E4E7&currStreakNum=E4E4E7&sideNums=E4E4E7&dates=8B949E" width="49%" />
+<a href="https://github.com/YuvrajSinghBhadoria2">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=YuvrajSinghBhadoria2&theme=tokyonight&hide_border=true" width="49%" />
+</a>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuvrajSinghBhadoria2&layout=compact&theme=tokyonight&hide_border=true&bg_color=1A1B27&title_color=00D4FF&text_color=E4E4E7" width="49%" />
+<a href="https://github.com/YuvrajSinghBhadoria2">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuvrajSinghBhadoria2&layout=compact&theme=tokyonight&hide_border=true" width="49%" />
+</a>
 
-<img src="https://github-profile-trophy.vercel.app/?username=YuvrajSinghBhadoria2&theme=tokyonight&no-frame=true&no-bg=true&column=6&margin-w=4" width="49%" />
+<a href="https://github.com/YuvrajSinghBhadoria2">
+<img src="https://github-profile-trophy.vercel.app/?username=YuvrajSinghBhadoria2&theme=tokyonight&no-frame=true&no-bg=true&column=6" width="49%" />
+</a>
 
 </div>
 
@@ -125,7 +138,7 @@ Not prototypes. Not demos. Systems serving real users, at scale, under latency c
 
 <div align="center">
 
-[![Yuvraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=YuvrajSinghBhadoria2&theme=tokyonight&hide_border=true&bg_color=1A1B27&color=00D4FF&line=00D4FF&point=FFFFFF&area_color=00D4FF&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Yuvraj's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=YuvrajSinghBhadoria2&theme=tokyonight&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
