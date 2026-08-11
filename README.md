@@ -185,17 +185,6 @@ Multi-tenant architecture · authentication · migrations · testing · deployme
 
 I'm particularly interested in **efficient training, post-training, reasoning models, inference optimization and GPU systems**.
 
----
 
-<div align="center">
-
-## `github`
-
-<br>
-
-[![GitHub followers](https://img.shields.io/github/followers/YuvrajSinghBhadoria2?label=Followers&style=social)](https://github.com/YuvrajSinghBhadoria2?tab=followers)
-[![GitHub stars](https://img.shields.io/github/stars/YuvrajSinghBhadoria2?style=social)](https://github.com/YuvrajSinghBhadoria2?tab=repositories&sort=stars)
-
-</div>
 
 
