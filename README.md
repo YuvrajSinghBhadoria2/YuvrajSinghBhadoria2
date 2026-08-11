@@ -2,7 +2,7 @@
 
 <br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0D1117,50:111827,100:1D4ED8&text=YUVRAJ%20SINGH%20BHADORIA&fontSize=38&fontColor=FFFFFF&fontAlignY=40&animation=fadeIn&desc=Machine%20Learning%20Engineer%20%7C%20Model%20Engineering%20%7C%20Production%20AI&descSize=16&descAlignY=62&descColor=9CA3AF" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:030712,30:111827,55:1E3A8A,75:3730A3,100:0F172A&text=YUVRAJ&fontSize=64&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=SINGH%20BHADORIA%20%E2%80%94%20MACHINE%20LEARNING%20ENGINEER&descSize=14&descAlignY=60&descColor=A5B4FC&descAlign=50" />
 
 <br>
 
@@ -141,13 +141,13 @@ Multi-tenant architecture · authentication · migrations · testing · deployme
 
 <td width="50%" valign="top">
 
-### AI-Powered-Production-Incident-Commander
+### Fine-tuned-with_DPO
 
-**AI-assisted incident analysis and response.**
+**LLM fine-tuning using Direct Preference Optimization.**
 
-`Python` `LLMs` `Production AI`
+`Python` `DPO` `LLMs` `Post-Training`
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/AI-Powered-Production-Incident-Commander)**
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO)**
 
 </td>
 
@@ -166,7 +166,7 @@ Multi-tenant architecture · authentication · migrations · testing · deployme
 
 <br><br>
 
-`CUDA` · `Transformers` · `vLLM` · `FastAPI` · `PostgreSQL` · `Redis` · `Spark` · `SQL`
+`JAX` · `CUDA` · `Transformers` · `vLLM` · `FastAPI` · `PostgreSQL` · `Redis` · `Spark` · `SQL`
 
 </div>
 
