@@ -4,7 +4,17 @@
 
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Yuvraj Singh Bhadoria — Machine Learning Engineer">
+<a href="https://github.com/YuvrajSinghBhadoria2">
+<img width="100%" src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=52&duration=4000&pause=1500&color=FFFFFF&center=true&vCenter=true&width=900&height=100&lines=YUVRAJ+SINGH+BHADORIA" alt="Yuvraj Singh Bhadoria" />
+</a>
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2800&pause=1000&color=60A5FA&center=true&vCenter=true&width=800&height=45&lines=MACHINE+LEARNING+ENGINEER;MODEL+ENGINEERING+%2F%2F+DEEP+LEARNING+%2F%2F+AI+SYSTEMS;PYTORCH+%2F%2F+JAX+%2F%2F+CUDA+%2F%2F+NLP+%2F%2F+LLMs" />
+
+<br>
+
+`MODEL ENGINEERING` &nbsp; `DEEP LEARNING` &nbsp; `NLP` &nbsp; `LLMs`
 
 </div>
 
