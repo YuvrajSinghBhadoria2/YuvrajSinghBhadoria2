@@ -193,13 +193,8 @@ I'm particularly interested in **efficient training, post-training, reasoning mo
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=YuvrajSinghBhadoria2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=58A6FF" width="48%" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YuvrajSinghBhadoria2&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=C9D1D9" width="48%" />
-
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YuvrajSinghBhadoria2&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="48%" />
+[![GitHub followers](https://img.shields.io/github/followers/YuvrajSinghBhadoria2?label=Followers&style=social)](https://github.com/YuvrajSinghBhadoria2?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/YuvrajSinghBhadoria2?style=social)](https://github.com/YuvrajSinghBhadoria2?tab=repositories&sort=stars)
 
 </div>
 
