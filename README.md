@@ -2,7 +2,7 @@
 
 <img align='right' src="https://media.giphy.com/media/l3vR16pONs5pOqyAM/giphy.gif" width="230">
 
-<p><em>Machine Learning Engineer at <a href="https://www.bankofamerica.com/">Bank of America</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Ex-Policybazaar · Ex-Infosys<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+<p><em>LLM Inference Engineer at <a href="https://www.bankofamerica.com/">Bank of America</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Ex-Policybazaar · Ex-Infosys<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 </em></p>
 
 [![Linkedin: yuvraj-singh-bhadoria](https://img.shields.io/badge/-yuvraj--singh--bhadoria-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yuvraj-singh-bhadoria/)](https://www.linkedin.com/in/yuvraj-singh-bhadoria/)
@@ -14,65 +14,76 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
 ```python
-class MLEngineer:
+class LLMInferenceEngineer:
     """
-    Machine Learning Engineer @ Bank of America
-    Building production LLM infrastructure
+    LLM Inference Engineer @ Bank of America
+    Making models faster and cheaper in production
     """
     
     def __init__(self):
         self.name = "Yuvraj Singh Bhadoria"
         self.pronouns = ["he", "him"]
-        self.role = "ML Engineer @ Bank of America"
+        self.role = "LLM Inference Engineer @ Bank of America"
         
-    # Core competencies
+    # Core focus — inference optimization
     focus = [
-        "LLM Training",        # SFT, DPO, RLHF
-        "Post-Training",       # PEFT, LoRA, QLoRA
-        "Inference",           # vLLM, TensorRT, KV-cache
-        "Production AI"        # Latency, cost, reliability
+        "LLM Serving",            # vLLM, SGLang, TensorRT-LLM
+        "Kernel Optimization",    # Triton, CUDA, custom attention kernels
+        "Speculative Decoding",   # draft-verify, EAGLE, n-gram drafters
+        "Quantization & Cost",    # INT4/INT8, speed vs accuracy tradeoffs
     ]
     
-    # Tech stack
-    frameworks = ["PyTorch", "JAX", "Transformers", "CUDA"]
-    tools = ["vLLM", "FastAPI", "LangChain", "LangGraph"]
-    infra = ["Docker", "Kubernetes", "PostgreSQL", "Redis"]
-    data = ["PySpark", "SQL", "Azure", "MLflow"]
+    # Tech stack — inference-first
+    serving = ["vLLM", "SGLang", "TensorRT-LLM", "Triton Inference Server"]
+    kernels = ["CUDA", "Triton", "FlashAttention", "PagedAttention"]
+    frameworks = ["PyTorch", "JAX", "Transformers", "llama.cpp"]
+    profiling = ["Nsight Systems", "PyTorch Profiler", "ncu", "torch.cuda.Event"]
+    infra = ["Docker", "Kubernetes", "NVIDIA GPU", "Ray Serve"]
     
-    # Experience timeline
+    # What I do daily
     @property
-    def experience(self):
+    def work(self):
         return {
-            "Bank of America": "Production LLM serving infrastructure",
-            "Policybazaar": "RAG systems & document intelligence", 
-            "Infosys": "ML solutions at scale"
+            "kernel_dev": "Writing Triton/CUDA kernels for fused ops",
+            "serving": "Tuning vLLM/SGLang for throughput and latency",
+            "profiling": "Finding bottlenecks with NSight and torch profiler",
+            "optimization": "Quantization, KV-cache, speculative decoding",
         }
     
-    # Shipped metrics
+    # Shipped results
     @property
     def metrics(self):
         return {
-            "retrieval_accuracy": "52% → 88%",   # +36%
-            "inference_latency": "800ms → <300ms", # -62%
-            "inference_cost": "-25%",              # saved
-            "pricing_error": "-18%"               # reduced
+            "inference_latency": "800ms → <300ms",   # -62%
+            "cpu_inference": "~4x faster decoding",   # llama.cpp
+            "inference_cost": "-25%",                 # saved
+            "pricing_error": "-18%",                  # reduced
         }
     
-    # Current interests
-    currently_learning = "JAX for high-performance ML"
-    exploring = "Reasoning models & efficient inference"
-    building = "Production LLM infrastructure"
+    # Experience
+    @property
+    def experience(self):
+        return {
+            "Bank of America": "LLM inference infrastructure & optimization",
+            "Policybazaar": "RAG systems & document intelligence",
+            "Infosys": "ML solutions at scale",
+        }
+    
+    # Currently building
+    exploring = "SGLang RadixAttention & CUDA graph capture"
+    building = "High-throughput LLM serving pipelines"
+    writing = "LLM inference blog series"
 ```
 
 ---
 
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love building systems that actually work in production</b> so if you want to say <b>hi, I'll be happy to connect!</b> :)</em>
+### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I make LLMs faster and cheaper in production</b> — inference optimization, GPU kernels, and the systems around them. Let's connect!</em>
 
 ---
 
 <div align="center">
 
-### `selected work`
+### `inference optimization work`
 
 </div>
 
@@ -81,13 +92,44 @@ class MLEngineer:
 
 <td width="50%" valign="top">
 
+### triton-attention-kernels
+
+**Portable Triton attention kernels for LLM inference.**
+
+`Triton` `CUDA` `FlashAttention` `PagedAttention`
+
+Fused prefill · split-KV flash-decoding · paged KV-cache attention — validated against PyTorch SDPA on NVIDIA T4
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### speculative-decoding-engine
+
+**From-scratch speculative decoding for LLM inference.**
+
+`Python` `Speculative Decoding` `LLM`
+
+N-gram drafter + distribution-preserving verification · measured speedup vs autoregressive
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/speculative-decoding-engine)**
+
+</td>
+
+</tr>
+<tr>
+
+<td width="50%" valign="top">
+
 ### production-llm-platform
 
-**Production-oriented LLM serving infrastructure.**
+**Production LLM serving infrastructure.**
 
-`FastAPI` `vLLM` `PostgreSQL` `Redis` `Kubernetes`
+`vLLM` `FastAPI` `PostgreSQL` `Redis` `Kubernetes`
 
-Authentication · multi-tenancy · routing · quotas · observability · circuit breakers
+PagedAttention · continuous batching · multi-tenant routing · circuit breakers
 
 **→ [explore repository](https://github.com/YuvrajSinghBhadoria2/production-llm-platform)**
 
@@ -95,43 +137,77 @@ Authentication · multi-tenancy · routing · quotas · observability · circuit
 
 <td width="50%" valign="top">
 
-### enterprise-agent-platform
+### llm-quant-serve
 
-**Infrastructure for production AI workflows.**
+**Quantize + serve LLMs with vLLM.**
 
-`FastAPI` `PostgreSQL` `Redis` `Docker` `Kubernetes`
+`Python` `vLLM` `Quantization` `Benchmarking`
 
-Multi-tenant architecture · authentication · migrations · testing · deployment
+Speed vs accuracy measurement with 2-pt guard (USE/AVOID)
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/enterprise-agent-platform)**
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-quant-serve)**
 
 </td>
 
 </tr>
-
 <tr>
 
 <td width="50%" valign="top">
 
-### opencode-voice-mcp
+### llm-cpu-inference-optimization
 
-**Exploring voice interfaces and MCP-based workflows.**
+**Measured CPU LLM inference with llama.cpp.**
 
-`Python` `MCP` `Voice` `AI`
+`Python` `llama.cpp` `Quantization` `CPU`
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/opencode-voice-mcp)**
+Thread-topology · quantization · batching · ~4x faster decoding, identical output quality
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-cpu-inference-optimization)**
 
 </td>
 
 <td width="50%" valign="top">
 
-### Fine-tuned-with_DPO
+### inferlast
 
-**LLM fine-tuning using Direct Preference Optimization.**
+**CPU-first LLM inference optimizer.**
 
-`Python` `DPO` `LLMs` `Post-Training`
+`Python` `Benchmarking` `Quantization` `CPU`
 
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO)**
+Profiles the true bottleneck, picks a change, refuses to call it a win unless the benchmark is honestly real
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/inferlast)**
+
+</td>
+
+</tr>
+<tr>
+
+<td width="50%" valign="top">
+
+### vllm-inference-tradeoff-benchmark
+
+**Speed-vs-accuracy tradeoffs of vLLM serving configs.**
+
+`Jupyter Notebook` `vLLM` `Benchmarking`
+
+Measured on a real model + free GPU · USE/AVOID decision rule with accuracy guard
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/vllm-inference-tradeoff-benchmark)**
+
+</td>
+
+<td width="50%" valign="top">
+
+### llm-inference-blog
+
+**LLM inference optimization blog series.**
+
+`HTML` `Writing`
+
+Day 1+ posts on serving, kernels, and practical optimization
+
+**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-inference-blog)**
 
 </td>
 
@@ -146,45 +222,43 @@ Multi-tenant architecture · authentication · migrations · testing · deployme
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,jax,linux,docker,kubernetes,git&perline=8" />
+<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,jax,linux,docker,kubernetes,cuda,nvidia&perline=8" />
 
 <br><br>
 
-`JAX` · `CUDA` · `Transformers` · `vLLM` · `FastAPI` · `PostgreSQL` · `Redis` · `Spark` · `SQL`
+`vLLM` · `SGLang` · `Triton` · `CUDA` · `FlashAttention` · `TensorRT-LLM` · `PyTorch` · `llama.cpp` · `Ray Serve`
 
 </div>
 
 ---
 
-## `what I'm going deeper into`
+## `where I'm going deeper`
 
 ```text
-                  MODEL ENGINEERING
+                INFERENCE OPTIMIZATION
 
-        ┌──────────────┬──────────────┐
-        │              │              │
-     TRAINING      POST-TRAINING   EVALUATION
-        │              │              │
-     PyTorch           SFT          Benchmarks
-     JAX                PEFT         Error analysis
-     CUDA               RL          Reliability
-        │              │              │
-        └──────────────┼──────────────┘
-                       │
-                       ▼
-                  INFERENCE
-                       │
-                latency / cost
-                throughput / GPU
-                       │
-                       ▼
-                  ML SYSTEMS
+     ┌──────────────┬──────────────┬──────────────┐
+     │              │              │              │
+   SERVING       KERNELS       MEMORY        DECODING
+     │              │              │              │
+   vLLM          Triton        KV-cache       Speculative
+   SGLang        CUDA          PagedAttn      EAGLE
+   TRT-LLM      FlashAttn     Quantization   N-gram draft
+     │              │              │              │
+     └──────────────┼──────────────┼──────────────┘
+                    │
+                    ▼
+              GPU SYSTEMS
+                    │
+             profiling / tuning
+             latency / cost / $/token
+                    │
+                    ▼
+              PRODUCTION
 ```
 
 <br>
 
-I'm particularly interested in **efficient training, post-training, reasoning models, inference optimization and GPU systems**.
-
-
-
-
+I'm focused on **inference optimization — making LLMs faster and cheaper to serve**.  
+Core areas: **vLLM, SGLang, Triton kernels, CUDA, speculative decoding, quantization, and GPU systems**.  
+Always happy to connect with others working on the same problems.
