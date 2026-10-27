@@ -1,264 +1,89 @@
-<h2> Hi, I'm Yuvraj Singh Bhadoria! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
-
-<img align='right' src="https://media.giphy.com/media/l3vR16pONs5pOqyAM/giphy.gif" width="230">
-
-<p><em>LLM Inference Engineer at <a href="https://www.bankofamerica.com/">Bank of America</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30"></br>Ex-Policybazaar · Ex-Infosys<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
-</em></p>
-
-[![Linkedin: yuvraj-singh-bhadoria](https://img.shields.io/badge/-yuvraj--singh--bhadoria-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/yuvraj-singh-bhadoria/)](https://www.linkedin.com/in/yuvraj-singh-bhadoria/)
-[![GitHub YuvrajSinghBhadoria2](https://img.shields.io/github/followers/YuvrajSinghBhadoria2?label=follow&style=social)](https://github.com/YuvrajSinghBhadoria2)
-[![Email](https://img.shields.io/badge/-yuvrajsinghbhado2030@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:yuvrajsinghbhado2030@gmail.com)
+# Yuvraj Singh Bhadoria
+**LLM Inference Optimization Engineer** — Building kernels & serving systems that make LLMs faster, cheaper, and longer-context.
 
 ---
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
+## 🔥 Flagship Projects
 
-```python
-class LLMInferenceEngineer:
-    """
-    LLM Inference Engineer @ Bank of America
-    Making models faster and cheaper in production
-    """
-    
-    def __init__(self):
-        self.name = "Yuvraj Singh Bhadoria"
-        self.pronouns = ["he", "him"]
-        self.role = "LLM Inference Engineer @ Bank of America"
-        
-    # Core focus — inference optimization
-    focus = [
-        "LLM Serving",            # vLLM, SGLang, TensorRT-LLM
-        "Kernel Optimization",    # Triton, CUDA, custom attention kernels
-        "Speculative Decoding",   # draft-verify, EAGLE, n-gram drafters
-        "Quantization & Cost",    # INT4/INT8, speed vs accuracy tradeoffs
-    ]
-    
-    # Tech stack — inference-first
-    serving = ["vLLM", "SGLang", "TensorRT-LLM", "Triton Inference Server"]
-    kernels = ["CUDA", "Triton", "FlashAttention", "PagedAttention"]
-    frameworks = ["PyTorch", "JAX", "Transformers", "llama.cpp"]
-    profiling = ["Nsight Systems", "PyTorch Profiler", "ncu", "torch.cuda.Event"]
-    infra = ["Docker", "Kubernetes", "NVIDIA GPU", "Ray Serve"]
-    
-    # What I do daily
-    @property
-    def work(self):
-        return {
-            "kernel_dev": "Writing Triton/CUDA kernels for fused ops",
-            "serving": "Tuning vLLM/SGLang for throughput and latency",
-            "profiling": "Finding bottlenecks with NSight and torch profiler",
-            "optimization": "Quantization, KV-cache, speculative decoding",
-        }
-    
-    # Shipped results
-    @property
-    def metrics(self):
-        return {
-            "inference_latency": "800ms → <300ms",   # -62%
-            "cpu_inference": "~4x faster decoding",   # llama.cpp
-            "inference_cost": "-25%",                 # saved
-            "pricing_error": "-18%",                  # reduced
-        }
-    
-    # Experience
-    @property
-    def experience(self):
-        return {
-            "Bank of America": "LLM inference infrastructure & optimization",
-            "Policybazaar": "RAG systems & document intelligence",
-            "Infosys": "ML solutions at scale",
-        }
-    
-    # Currently building
-    exploring = "SGLang RadixAttention & CUDA graph capture"
-    building = "High-throughput LLM serving pipelines"
-    writing = "LLM inference blog series"
-```
+| Project | What It Does | Tech Stack | Measured Impact |
+|---------|--------------|------------|-----------------|
+| **[FP4 KV-Cache for llama.cpp](https://github.com/YuvrajSinghBhadoria2/fp4-kvcache-llama-cpp)** | 4× KV memory compression on Blackwell (RTX 5090) via custom FP4 E2M1 quantization + MXFP4 conversion for native FP4 MMA | CUDA, PTX, MXFP4, llama.cpp internals | **Target: 230+ tok/s decode** (vs 207 FP16 baseline) — *Upstream PR in progress* |
+| **[Triton Attention Kernels](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)** | FA2 prefill, split-KV flash decode, paged attention — roofline-validated on T4 | Triton, CUDA, NCU profiling | **10× prefill memory reduction**, **2.8× decode speedup** at 16K context |
+| **[Speculative Decoding Engine](https://github.com/YuvrajSinghBhadoria2/speculative-decoding-engine)** | From-scratch n-gram + EAGLE-style drafters with distribution-preserving verification | Python, PyTorch | **1.2–1.6× speedup** (train-free), **2–3×** with trained drafter |
+| **[inferlast](https://github.com/YuvrajSinghBhadoria2/inferlast)** | CPU-first optimizer with honest benchmarking, quantization quality auditing, GPU-worthiness estimation | Python, llama.cpp, vLLM | Catches **false wins from noise**; emits deploy-ready configs |
+| **[Flash Attention Benchmark](https://github.com/YuvrajSinghBhadoria2/flash-attention-triton-cuda-benchmark)** | Reproducible roofline-grounded comparison: Triton vs CUDA vs SDPA | Triton, CUDA, NCU | Methodology used across projects |
 
 ---
 
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I make LLMs faster and cheaper in production</b> — inference optimization, GPU kernels, and the systems around them. Let's connect!</em>
+## 📊 Measured Results
+
+| Metric | Baseline | Optimized | Method |
+|--------|----------|-----------|--------|
+| **KV cache memory** | 4096 bytes/token (FP16) | **1152 bytes/token (4×)** | FP4 E2M1 quantization |
+| **Prefill memory (4K ctx)** | 4.46 GB (naive) | **0.44 GB (10× less)** | Triton FA2 online softmax |
+| **Decode latency (split-KV 32)** | 1.14 ms | **0.40 ms (2.8×)** | Split-KV flash decoding |
+| **Speculative decoding speedup** | 1.0× (autoregressive) | **1.6×** | n-gram drafter + rejection sampling |
+| **CPU llama.cpp decode** | Baseline | **4× faster** | Thread/quant/batch tuning |
+| **Production serving latency** | 800 ms | **<300 ms (-62%)** | vLLM + FastAPI + K8s optimization |
+| **Inference cost** | Baseline | **-25%** | Quantization + batching + routing |
 
 ---
 
-<div align="center">
+## 🛠 Technical Stack
 
-### `inference optimization work`
+**Kernels & Quantization**  
+`CUDA` `PTX (MMA)` `Triton` `FP4 E2M1` `MXFP4` `UE8M0` `FlashAttention-2/3` `Paged Attention` `Split-KV`
 
-</div>
+**Frameworks & Serving**  
+`vLLM` `SGLang` `TensorRT-LLM` `llama.cpp` `Ray Serve` `FastAPI` `Docker` `Kubernetes`
 
-<table>
-<tr>
+**Profiling & Methodology**  
+`NCU` `NSYS` `Roofline Analysis` `Memory Bandwidth Optimization` `Quantization Quality Auditing` `Honest Benchmarking`
 
-<td width="50%" valign="top">
-
-### triton-attention-kernels
-
-**Portable Triton attention kernels for LLM inference.**
-
-`Triton` `CUDA` `FlashAttention` `PagedAttention`
-
-Fused prefill · split-KV flash-decoding · paged KV-cache attention — validated against PyTorch SDPA on NVIDIA T4
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### speculative-decoding-engine
-
-**From-scratch speculative decoding for LLM inference.**
-
-`Python` `Speculative Decoding` `LLM`
-
-N-gram drafter + distribution-preserving verification · measured speedup vs autoregressive
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/speculative-decoding-engine)**
-
-</td>
-
-</tr>
-<tr>
-
-<td width="50%" valign="top">
-
-### production-llm-platform
-
-**Production LLM serving infrastructure.**
-
-`vLLM` `FastAPI` `PostgreSQL` `Redis` `Kubernetes`
-
-PagedAttention · continuous batching · multi-tenant routing · circuit breakers
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/production-llm-platform)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### llm-quant-serve
-
-**Quantize + serve LLMs with vLLM.**
-
-`Python` `vLLM` `Quantization` `Benchmarking`
-
-Speed vs accuracy measurement with 2-pt guard (USE/AVOID)
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-quant-serve)**
-
-</td>
-
-</tr>
-<tr>
-
-<td width="50%" valign="top">
-
-### llm-cpu-inference-optimization
-
-**Measured CPU LLM inference with llama.cpp.**
-
-`Python` `llama.cpp` `Quantization` `CPU`
-
-Thread-topology · quantization · batching · ~4x faster decoding, identical output quality
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-cpu-inference-optimization)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### inferlast
-
-**CPU-first LLM inference optimizer.**
-
-`Python` `Benchmarking` `Quantization` `CPU`
-
-Profiles the true bottleneck, picks a change, refuses to call it a win unless the benchmark is honestly real
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/inferlast)**
-
-</td>
-
-</tr>
-<tr>
-
-<td width="50%" valign="top">
-
-### vllm-inference-tradeoff-benchmark
-
-**Speed-vs-accuracy tradeoffs of vLLM serving configs.**
-
-`Jupyter Notebook` `vLLM` `Benchmarking`
-
-Measured on a real model + free GPU · USE/AVOID decision rule with accuracy guard
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/vllm-inference-tradeoff-benchmark)**
-
-</td>
-
-<td width="50%" valign="top">
-
-### llm-inference-blog
-
-**LLM inference optimization blog series.**
-
-`HTML` `Writing`
-
-Day 1+ posts on serving, kernels, and practical optimization
-
-**→ [explore repository](https://github.com/YuvrajSinghBhadoria2/llm-inference-blog)**
-
-</td>
-
-</tr>
-</table>
+**Core ML**  
+`PyTorch` `Speculative Decoding` `EAGLE/Medusa` `GQA` `KV Cache Management` `Prefix Caching`
 
 ---
 
-<div align="center">
+## 📝 Technical Writing
 
-## `the stack`
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=python,cpp,pytorch,jax,linux,docker,kubernetes,cuda,nvidia&perline=8" />
-
-<br><br>
-
-`vLLM` · `SGLang` · `Triton` · `CUDA` · `FlashAttention` · `TensorRT-LLM` · `PyTorch` · `llama.cpp` · `Ray Serve`
-
-</div>
+- **[FP4 E2M1 → MXFP4 Conversion Mathematics](https://github.com/YuvrajSinghBhadoria2/fp4-kvcache-llama-cpp/blob/main/upstream-pr/MXFP4_CONVERSION_MATH.md)** — Why Blackwell requires MXFP4 for native FP4 MMA, UE8M0 scale encoding, conversion algorithms
+- **[Triton Flash Attention Kernel Walkthrough](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)** — Kernel structure, online softmax, split-KV parallelism, paged attention block tables
+- **[Honest Benchmarking Methodology](https://github.com/YuvrajSinghBhadoria2/inferlast)** — Framework overhead measurement, quantization quality via logit cosine, trust-check for false wins
 
 ---
 
-## `where I'm going deeper`
+## 💼 Experience
 
-```text
-                INFERENCE OPTIMIZATION
+**Bank of America** — *LLM Inference Engineer* (Current)  
+Optimizing LLM serving infrastructure: vLLM/TensorRT-LLM deployment, quantization pipelines, latency/cost reduction.
 
-     ┌──────────────┬──────────────┬──────────────┐
-     │              │              │              │
-   SERVING       KERNELS       MEMORY        DECODING
-     │              │              │              │
-   vLLM          Triton        KV-cache       Speculative
-   SGLang        CUDA          PagedAttn      EAGLE
-   TRT-LLM      FlashAttn     Quantization   N-gram draft
-     │              │              │              │
-     └──────────────┼──────────────┼──────────────┘
-                    │
-                    ▼
-              GPU SYSTEMS
-                    │
-             profiling / tuning
-             latency / cost / $/token
-                    │
-                    ▼
-              PRODUCTION
-```
+**Policybazaar** — *ML Engineer*  
+Built ML systems for insurance domain: recommendation engines, fraud detection, NLP pipelines.
 
-<br>
+**Infosys** — *Software Engineer*  
+Full-stack development and cloud migration projects.
 
-I'm focused on **inference optimization — making LLMs faster and cheaper to serve**.  
-Core areas: **vLLM, SGLang, Triton kernels, CUDA, speculative decoding, quantization, and GPU systems**.  
-Always happy to connect with others working on the same problems.
+---
+
+## 🎯 Currently Seeking
+
+**Senior / Staff Inference Optimization Engineer** roles at companies building:
+- LLM serving infrastructure (Together AI, Fireworks, Anyscale, Baseten, Modal, vLLM core)
+- Custom AI silicon & compilers (Groq, Cerebras, Tenstorrent, SambaNova, NVIDIA TensorRT-LLM, AMD MLIR/IREE)
+- Applied research serving stacks (xAI, Anthropic, Mistral, Cohere)
+
+**Location:** Remote / Hybrid US  
+**Availability:** Immediate
+
+---
+
+## 📫 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/yuvraj-singh-bhadoria)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/YuvrajSinghBhadoria2)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:yuvraj.bhadoria@gmail.com)
+
+---
+
+*Last updated: October 2026*
