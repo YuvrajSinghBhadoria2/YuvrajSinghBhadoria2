@@ -7,9 +7,9 @@ LLM Inference Optimization Engineer — kernels, serving, and quantization for p
 
 | Project | What It Is | Stack | Result |
 |---------|------------|-------|--------|
-| **[FP4 KV-Cache for llama.cpp](https://github.com/YuvrajSinghBhadoria2/fp4-kvcache-llama-cpp)** | 4× KV memory compression on Blackwell (RTX 5090) via custom FP4 E2M1 + MXFP4 conversion for native FP4 tensor cores | CUDA, PTX, MXFP4, llama.cpp internals | 1152 vs 4096 bytes/token; targeting 230+ tok/s decode (vs 207 FP16 baseline) — upstream PR in progress |
-| **[Triton Attention Kernels](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)** | FA2 prefill, split-KV flash decode, paged attention — roofline-validated on T4 | Triton, CUDA, NCU | 10× prefill memory reduction (4.46 GB → 0.44 GB); 2.8× decode speedup at 16K context |
-| **[Speculative Decoding Engine](https://github.com/YuvrajSinghBhadoria2/speculative-decoding-engine)** | From-scratch n-gram + EAGLE-style drafters with distribution-preserving verification | Python, PyTorch | 1.6× speedup train-free; 2–3× with trained drafter |
+| **[FP4 KV-Cache for llama.cpp](https://github.com/YuvrajSinghBhadoria2/fp4-kvcache-llama-cpp)** (design/prototype) | ~3.5× KV compression targeting Blackwell via FP4 E2M1 + MXFP4 conversion for native FP4 MMA | CUDA, PTX, MXFP4, llama.cpp internals | ~1152 vs 4096 B/token (~3.5×); projected 230+ tok/s (simulated, hardware validation pending) — upstream PR in progress |
+| **[Triton Attention Kernels](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels)** | FA2 prefill, split-KV flash decode, paged attention — roofline-validated on T4 | Triton, CUDA, NCU | ~10× prefill memory reduction (4.46 GB → 0.44 GB); ~2.8× decode speedup at 16K context |
+| **[Speculative Decoding Engine](https://github.com/YuvrajSinghBhadoria2/speculative-decoding-engine)** | From-scratch n-gram + EAGLE-style drafters with distribution-preserving verification | Python, PyTorch | 1.5–2× speedup train-free; 2–3× with trained drafter |
 | **[inferlast](https://github.com/YuvrajSinghBhadoria2/inferlast)** | CPU-first optimizer with honest benchmarking, quantization quality auditing, GPU-worthiness estimation | Python, llama.cpp, vLLM | Catches false wins from noise; emits deploy-ready configs |
 | **[Flash Attention Benchmark](https://github.com/YuvrajSinghBhadoria2/flash-attention-triton-cuda-benchmark)** | Reproducible roofline-grounded comparison: Triton vs CUDA vs SDPA | Triton, CUDA, NCU | Methodology used across projects |
 
@@ -19,13 +19,13 @@ LLM Inference Optimization Engineer — kernels, serving, and quantization for p
 
 | Metric | Baseline | Optimized | Method |
 |--------|----------|-----------|--------|
-| KV cache memory | 4096 B/token (FP16) | **1152 B/token (4×)** | FP4 E2M1 quantization |
-| Prefill memory (4K ctx) | 4.46 GB (naive) | **0.44 GB (10× less)** | Triton FA2 online softmax |
-| Decode latency (split-KV 32) | 1.14 ms | **0.40 ms (2.8×)** | Split-KV flash decoding |
-| Speculative decoding speedup | 1.0× | **1.6×** | n-gram drafter + rejection sampling |
-| CPU llama.cpp decode | baseline | **4× faster** | Thread/quant/batch tuning |
-| Production serving latency | 800 ms | **<300 ms** | vLLM + FastAPI + K8s |
-| Inference cost | baseline | **-25%** | Quantization + batching + routing |
+| KV cache memory | 4096 B/token (FP16) | ~1152 B/token (~3.5×) | FP4 E2M1 quantization |
+| Prefill memory (4K ctx) | 4.46 GB (naive) | ~0.44 GB (~10× less) | Triton FA2 online softmax |
+| Decode latency (split-KV 32) | 1.14 ms | ~0.40 ms (~2.8×) | Split-KV flash decoding |
+| Speculative decoding speedup | 1.0× | 1.5–2× | n-gram drafter + rejection sampling |
+| CPU llama.cpp decode | baseline | ~4× faster | Thread/quant/batch tuning |
+| Production serving latency (Llama-3-70B, H100, batch 32) | ~800 ms | <300 ms | vLLM + FastAPI + K8s |
+| Inference cost | baseline | ~25% reduction | Quantization + batching + routing |
 
 ---
 
@@ -43,6 +43,8 @@ NCU • NSYS • Roofline Analysis • Memory Bandwidth Optimization • Quantiz
 **Core ML**  
 PyTorch • Speculative Decoding (EAGLE, Medusa) • GQA • KV Cache Management • Prefix Caching
 
+> **Hardware Context:** Benchmarks validated on T4 via roofline analysis. Methodology portable to H100/Blackwell. FP4 KV-cache is a design/prototype pending hardware access.
+
 ---
 
 ## Writing
@@ -50,6 +52,14 @@ PyTorch • Speculative Decoding (EAGLE, Medusa) • GQA • KV Cache Management
 - [FP4 E2M1 → MXFP4 Conversion Mathematics](https://github.com/YuvrajSinghBhadoria2/fp4-kvcache-llama-cpp/blob/main/upstream-pr/MXFP4_CONVERSION_MATH.md) — Why Blackwell requires MXFP4 for native FP4 MMA, UE8M0 scale encoding, conversion algorithms
 - [Triton Flash Attention Kernel Walkthrough](https://github.com/YuvrajSinghBhadoria2/triton-attention-kernels) — Kernel structure, online softmax, split-KV parallelism, paged attention block tables
 - [Honest Benchmarking Methodology](https://github.com/YuvrajSinghBhadoria2/inferlast) — Framework overhead measurement, quantization quality via logit cosine, trust-check for false wins
+
+---
+
+## vLLM Contributions (Verifiable)
+
+- **#63479** MoE TP Collective Optimization — compiler pass eliminating all-reduce via output projection sharding
+- **#63798** Sliding Window Prefix Cache Fix — right-expansion algorithm for stride-based probing
+- **#64912** Triton MoE Performance Fix — naive block assignment only at batch=1 (8–52% decode speedup on bandwidth-limited GPUs)
 
 ---
 
